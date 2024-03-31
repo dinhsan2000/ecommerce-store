@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\AttributeSet;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,10 +17,12 @@ class AttributeFactory extends Factory
      */
     public function definition(): array
     {
+        $attributeSet = AttributeSet::query()->get()->random();
         return [
             'name' => $this->faker->word,
             'value' => $this->faker->word,
             'is_filterable' => $this->faker->boolean,
+            'attribute_set_id' => $attributeSet->id,
         ];
     }
 }

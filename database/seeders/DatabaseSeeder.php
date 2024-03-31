@@ -35,6 +35,14 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             RolePermissionSeeder::class,
+            CurrencySeeder::class,
+            CategorySeeder::class,
+            BrandSeeder::class,
+            TagSeeder::class,
+            TaxSeeder::class,
+            AttributeSetSeeder::class,
+            AttributeSeeder::class,
+            VariationSeeder::class,
         ]);
     }
 }
