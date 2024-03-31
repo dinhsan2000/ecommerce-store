@@ -28,7 +28,7 @@ class BrandSeeder extends Seeder
                 'name' => 'Samsung',
                 'slug' => 'samsung',
                 'logo' => 'brands/samsung.png',
-                'image' => 'v',
+                'image' => 'brands/samsung.jpg',
                 'banner' => 'brands/samsung-banner.jpg',
                 'meta_title' => 'Samsung',
                 'meta_description' => 'Samsung',

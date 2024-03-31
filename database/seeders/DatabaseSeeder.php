@@ -43,6 +43,7 @@ class DatabaseSeeder extends Seeder
             AttributeSetSeeder::class,
             AttributeSeeder::class,
             VariationSeeder::class,
+            OptionSeeder::class
         ]);
     }
 }
